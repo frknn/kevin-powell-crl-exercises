@@ -1,0 +1,74 @@
+:root {
+  --clr-dark-blue: #23424A;
+  --clr-blue: #136C72;
+  --clr-light-blue: #38CFD9;
+
+  --fs-big: 3rem;
+  --fs-small: 1.3125rem;
+
+  --fw-black: 900;
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --ff: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--ff);
+}
+
+.background {
+  background-color: var(--clr-dark-blue);
+  padding: 6em 0;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.container-text {
+  width: 60%;
+}
+
+.cta-title {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-black);
+  margin-bottom: 1.5rem;
+}
+
+.cta-paragraph {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+  margin-bottom: 4rem;
+  opacity: .8;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-light-blue);
+  color: var(--clr-dark-blue);
+  padding: .75em 2em;
+  border-radius: 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover, .cta-button:focus {
+  opacity: .75;
+}
